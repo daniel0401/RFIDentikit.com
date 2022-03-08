@@ -1,0 +1,100 @@
+.rfid__news {
+    display: flex;
+    flex-direction: column;
+}
+
+.rfid__news-heading {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.rfid__news-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+}
+
+.rfid__news-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.rfid__news-container_groupA {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+
+.rfid__news-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.rfid__news-button button {
+    flex: 1 1;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+    color: var(--color-main-text);
+    background: var(--color-rfid-main);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    border-radius: 40px;
+    border: 2px solid var(--color-rfid-main);
+    outline: none;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.rfid__news-button button:hover {
+    color: var(--color-main-text);
+    background: transparent;
+    border: 2px solid var(--color-main-text);
+}
+
+@media screen and (max-width: 1130px) {
+    .rfid__news-container_groupA {
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .rfid__news-container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 754px) {
+  .rfid__news-button button {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    .rfid__news-container_groupA {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .rfid__news-heading h1 {
+        font-size: 46px;
+        line-height: 52px;
+    }
+}
+
+@media screen and (max-width: 690px) {
+  .rfid__news-button button {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

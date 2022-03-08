@@ -1,0 +1,81 @@
+.rfid__news-container_article {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-footer);
+    border-radius: 10px;
+}
+
+.rfid__news-container_article-image {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    background: var(--color-footer);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rfid__news-container_article-image img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rfid__news-container_article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    height: 100%;
+}
+
+.rfid__news-container_article-content p {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 35px;
+    color: var(--color-main-text);
+}
+
+.rfid__news-container_article-content p a {
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.rfid__news-container_article-content p a:hover {
+    border-bottom: 2px solid var(--color-rfid-main);
+}
+
+.rfid__news-container_article-content h3 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 30px;
+    color: var(--color-main-text);
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.rfid__news-container_article-content span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-text);
+    margin-bottom: 1rem;
+}
+
+.rfid__news-container_article-content p:last-child {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+    .rfid__news-container_article-content h3 {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}

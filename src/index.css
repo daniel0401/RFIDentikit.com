@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --font-family: 'Manrope', sans-serif;
+
+    --gradient-text: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+    --gradient-bar: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%);
+    --gradient-mix: circle at 3% 25%, rgb(255, 255, 255) 0%, rgba(255, 255, 255) 100%;
+
+    --color-bg: #edf2f8;
+    --color-footer: #ffffff;
+    --color-blog: #cecece;
+    --color-text: #003c77;
+    --color-subtext: #c72026;
+    
+    --color-rfid-main: #c1d82f;
+    --color-rfid-red: #c72026;
+    --color-rfid-green: #c1d82f;
+
+    --color-main-text: #000000;
+    --color-dropdown: #e0e2e6;
+
+    --color-slick-button: #000000;
+    --color-slick-bg: #7b7b7b73;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (prefers-color-scheme: dark) {
+    :root {
+        --gradient-mix: circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%;
+
+        --color-bg: #040c18;
+        --color-footer: #031b34;
+        --color-blog: #042c54;
+        --color-text: #81afdd;
+        --color-subtext: #ff8a71;
+        
+        --color-rfid-main: #c72026;
+
+        --color-main-text: #ffffff;
+        --color-dropdown: #172c42;
+
+        --color-slick-button: #ffffff;
+        --color-slick-bg: #031b34;
+    }
 }

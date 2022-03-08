@@ -1,0 +1,162 @@
+.rfid__footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-footer);
+    border-top: 6px solid var(--color-blog);
+}
+
+.rfid__footer-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.rfid__footer-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    text-align: center;
+    letter-spacing: -0.04em;
+}
+
+.rfid__footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border: 1px solid var(--color-main-text);
+    text-align: center;
+    margin-bottom: 6rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.rfid__footer-btn p {
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--color-main-text);
+    word-spacing: 2px;
+    transition: all .3s ease;
+}
+
+.rfid__footer-btn:hover {
+    background: var(--color-main-text);
+    border: 1px solid var(--color-main-text);
+}
+
+.rfid__footer-btn:hover p {
+    color: var(--color-footer);
+}
+
+.rfid__footer-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    text-align: left;
+}
+
+.rfid__footer-links div {
+    width: 250px;
+    margin: 1rem;
+}
+
+.rfid__footer-links_logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.rfid__footer-links_logo img {
+    max-width: 250px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.rfid__footer-links_div {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.rfid__footer-links_div h4 {
+    font-family: var(--font-family);
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--color-main-text);
+    margin-bottom: 1rem;
+}
+
+.rfid__footer-links_div p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-main-text);
+    margin: .5rem 0;
+}
+
+.rfid__footer-links_div a {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 14px;
+    color: var(--color-main-text);
+    margin: .5rem 0;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all .2s;
+    width: 105px;
+}
+
+.rfid__footer-links_div a:hover {
+    border-bottom: 2px solid var(--color-rfid-main);
+}
+
+.rfid__footer-copyright {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.rfid__footer-copyright p {
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--color-main-text);
+}
+
+@media sceen and (max-width: 850px) {
+    .rfid__footer-heading h1 {
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .rfid__footer-heading h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .rfid__footer-links_div {
+        margin: 1rem 0;
+    }
+
+    .rfid__footer-btn p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .rfid__footer-heading h1 {
+        font-size: 27px;
+        line-height: 38px;
+    }
+}

@@ -1,0 +1,189 @@
+.rfid__function {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    border-radius: 10px;
+
+    /* ff 3.6+ */
+    background: -moz-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgba(4, 44, 84, 1) 85%,
+    rgba(27, 120, 222, 1) 100%
+    );
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgb(4, 44, 84) 65%,
+    rgb(11, 27, 45) 100% 
+    );
+
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+    circle at 30% -100%,
+    #042c54 25%,
+    rgb(4, 44, 84) 65%,
+    rgb(11, 27, 45) 100% 
+    );
+
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+    circle at 30% -100%,
+    circle at 30% -100%,
+    #042c54 25%,
+    rgb(4, 44, 84) 65%,
+    rgb(11, 27, 45) 100% 
+    );
+
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+    circle at 30% -100%,
+    circle at 30% -100%,
+    #042c54 25%,
+    rgb(4, 44, 84) 65%,
+    rgb(11, 27, 45) 100% 
+    );
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.rfid__function-feature {
+    display: flex;
+}
+
+.rfid__function-feature .rfid__technologies-container__technology {
+    margin: 0;
+}
+
+.rfid__function-feature .rfid__technologies-container__technology-text {
+    max-width: 700px;
+}
+
+.rfid__function-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.rfid__function-heading h1 {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    max-width: 510px;
+}
+
+.rfid__function-heading_svg {
+    position: relative;
+    padding: 19px 22px;
+    transition: all 0.2s ease;
+}
+
+.rfid__function-heading_svg:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: var(--color-rfid-main);
+    opacity: 0.5;
+    width: 56px;
+    height: 56px;
+    transition: all 0.3s ease;
+}
+
+.rfid__function-heading_svg span {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-main-text);
+    cursor: pointer;
+    position: relative;
+}
+
+.rfid__function-heading_svg svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: var(--color-main-text);
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.rfid__function-heading_svg:hover:before {
+    width: 100%;
+    background: var(--color-rfid-main);
+    opacity: 1;
+}
+
+.rfid__function-heading_svg:hover svg {
+    transform: translateX(0);
+}
+
+.rfid__function-heading_svg:active {
+    transform: scale(0.96);
+}
+
+.rfid__function-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.rfid__function-container .rfid__technologies-container__technology {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+.rfid__function-container .rfid__technologies-container_technology-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .rfid__function-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .rfid__function-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .rfid__function-feature .rfid__technologies-container__technology {
+        flex-direction: column;
+    }
+
+    .rfid__function-feature .rfid__technologies-container_technology-text {
+        margin-top: 0.5rem;
+    }
+
+    .rfid__function-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .rfid__function-container .rfid__technologies-container__technology {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
